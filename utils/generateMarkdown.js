@@ -5,7 +5,8 @@ function renderLicenseBadge(license) {return `https://img.shields.io/badge/lisce
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
 // return `[License](#https://choosealicense.com/licenses/mit/) ${license}`
-return `[License](#https://choosealicense.com/licenses/mit/) ${license}`
+if (license) {return `[License](#https://choosealicense.com/licenses/${license}/)`
+}else if (None) {return ""}
 }
 
 // TODO: Create a function that returns the license section of README
@@ -20,12 +21,12 @@ function generateMarkdown(data) {
   ## Description 
   ${data.Description}
   ## Table of Contents
-    Installation
-    Usage
-    License
-    Credits
-    Tests
-    Questions
+    [Installation](#Installation)
+    [Usage](#Usage)
+    [License] (#license)
+    [Credits] (#Credits)
+    [Tests](#Tests)
+  [Questions](#Questions)
     
   ## Installation 
   ${data.Installation}
