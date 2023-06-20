@@ -2,21 +2,24 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'None') {
-    return `https://img.shields.io/badge/liscense-${license}-blue`}
-    return ''
-    }
+    return `![alt text](https://img.shields.io/badge/license-${license}-blue)`
+  } return ''
+  }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
     if (license !== 'None') {
-      return `[License](#https://choosealicense.com/licenses/${license}/)`
-    }
-    return ''
+      return `[License](https://choosealicense.com/licenses/${license}/)`
+    } return ''
   }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license !== 'None') {
+  return ('#license')
+} return ''
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -31,7 +34,7 @@ function generateMarkdown(data) {
     [License] (#license)
     [Credits] (#Credits)
     [Tests](#Tests)
-  [Questions](#Questions)
+    [Questions](#Questions)
     
   ## Installation 
   ${data.Installation}
@@ -43,6 +46,7 @@ function generateMarkdown(data) {
    ${data.license}
       ${renderLicenseLink(data.license)}
       ${renderLicenseBadge(data.license)}
+      ${renderLicenseSection(data.license)}
   ## Tests 
   ${data.Tests}
   ## Questions
