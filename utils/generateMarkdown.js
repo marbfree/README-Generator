@@ -20,35 +20,47 @@ function renderLicenseSection(license) {
 } return ''
 }
 
+// function renderGitHubLink(username) {
+//   if (username) {
+//   return `[github](https://github.com/${username})`
+// } else (console.log(data.username))}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   ${renderLicenseBadge(data.license)}
-  # ${data.Title} 
-  ## Description 
+# ${data.Title} 
+## Description 
   ${data.Description}
-  ## Table of Contents
-    [Installation](#Installation)
-    [Usage](#Usage)
-    [License] (#license)
-    [Credits] (#Credits)
-    [Tests](#Tests)
-    [Questions](#Questions)
-  ## Installation 
+## Table of Contents
+[Installation](#installation) 
+
+[Usage](#usage)
+
+[License](#license)
+
+[Credits](#credits)
+
+[Tests](#tests)
+
+[Questions](#questions)
+
+## Installation 
   ${data.Installation}
-  ## Usage 
+## Usage 
   ${data.Usage}
-  ## Credits 
+## Credits 
   ${data.Credits}
-  ## License
-   ${data.license}
+## License
+  ${data.license}
       ${renderLicenseLink(data.license)}
       ${renderLicenseSection(data.license)}
-  ## Tests 
+## Tests 
   ${data.Tests}
-  ## Questions
-    Check out my GitHub at https://github.com/${data.username} 
-    Reach me at ${data.email} for any further questions.
+## Questions
+Check out my GitHub at https://github.com/${data.username} 
+
+Contact me at ${data.email} for any further questions.
 `}
 
 module.exports = generateMarkdown;
