@@ -1,6 +1,6 @@
 
-
-  # sd 
+  
+  #  
   ## Description 
   
   ## Table of Contents
@@ -10,7 +10,6 @@
     [Credits] (#Credits)
     [Tests](#Tests)
     [Questions](#Questions)
-    
   ## Installation 
   
   ## Usage 
@@ -18,10 +17,11 @@
   ## Credits 
   
   ## License
-   agpl-3.0
-      [License](https://choosealicense.com/licenses/agpl-3.0/)
-      ![alt text](https://img.shields.io/badge/liscense-agpl-3.0-blue)
+   None
+      
+      
   ## Tests 
   
   ## Questions
-  
+    Check out my GitHub at [Username](https://github.com/) 
+    Reach me at  for any further questions.
