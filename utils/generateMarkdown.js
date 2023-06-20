@@ -61,6 +61,8 @@ function generateMarkdown(data) {
 Check out my GitHub at https://github.com/${data.username} 
 
 Contact me at ${data.email} for any further questions.
+
+Screencastify video at https://drive.google.com/file/d/1B39ZOtkcnPt-gdXj6Y0C9KMMF6U9EWJQ/view
 `}
 
 module.exports = generateMarkdown;
